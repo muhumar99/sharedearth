@@ -2,13 +2,23 @@
 %html
   %head
     %title= @page_title
-    
     / %link{:type=>"text/css", :href=>"less/landing.less", :rel=>"stylesheet/less"}
+    / %link{:type=>"text/css", :href=>"stylesheet/boxy.css", :rel=>"stylesheet"}
     / %script{:type=>"text/javascript", :src=>"js/modernizr.js"}
     / %script{:type=>"text/javascript", :src=>"js/less.js"}
     / %script{:type=>"text/javascript", :src=>"js/jquery.js"}
     / %script{:type=>"text/javascript", :src=>"js/jqui.js"}
-    / %script{:type=>"text/javascript", :src=>"js/functions.js"}
+    / %script{:type=>"text/javascript", :src=>"js/jquery.boxy.js"}
+    / %script{:type=>"text/javascript", :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+    / %script{:type=>"text/javascript", :src=>"js/jquery-ui.min.js"}
+    
+   
+   
+
+  
+  
+
+
   %body
     %div.wrapper
       %div.container
@@ -44,4 +54,4 @@
             %span.imp shared 
             resources anywhere on 
             %span.imp earth
-          =link_to "Connect", new_session_path, :class => "button"
+          =link_to "Connect", new_session_path ,:class => "button", :id => "login"

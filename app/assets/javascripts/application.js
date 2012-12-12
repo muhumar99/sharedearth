@@ -10,6 +10,31 @@ $(document).ready(function() {
 	});
 });
 
+/* Jquery boxy */
+$(document).ready(function(){
+  $("#login").click(function(){
+  var htmlCode = "<form method='post' action='home.html'> Username <input type='text' id='user'></br>Password <input type='password' id='pass'></br> <input type='submit' value='Login' onclick='return login();'></form><p id='a'></p>";
+  Boxy.alert(htmlCode, null, {title: 'SOME TITLE'});
+  });
+  });
+  function login()
+  {
+  var a=document.getElementById("user").value;
+  var b=document.getElementById("pass").value;
+  if (a=="" || b=="")
+  {
+  document.getElementById("a").innerHTML="Username or password missing";
+  return false;
+  }
+  
+  }
+
+
+
+
+
+
+
 $(document).ready(function() {
 	$('.close').click(function() {
 		$('.notification').hide();
@@ -151,3 +176,6 @@ dojo.ready(function() {
 });
 
 // =require lightbox
+// =require facebox
+
+      

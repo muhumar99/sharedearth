@@ -20,6 +20,7 @@ gem 'less'
 gem 'less-rails-bootstrap'
 gem "twitter-bootstrap-rails"
 
+
 # ActiveAdmin
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git', :ref => "5c4e75a6d"
 gem 'kaminari'
@@ -42,7 +43,7 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
-  gem 'therubyracer'
+ # gem 'therubyracer'
 end
 
 test_and_development = Proc.new do
@@ -78,7 +79,7 @@ group  :test do
 end
 
 group :production do
-  gem 'pg'
+ # gem 'pg'
   gem 'thin'
   gem "airbrake", :require => false
   gem "heroku"
